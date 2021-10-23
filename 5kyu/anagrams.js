@@ -7,13 +7,8 @@ function anagrams(word, words) {
   return words.filter((el) => el.split('').sort().join('') === word.split('').sort().join(''))
 }
 
-console.log(anagrams('abba', ['aabab', 'abcd', 'bbaaa', 'dada']))
+console.log(anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada'])) // => ['aabb', 'bbaa']
 
-const str = 'word'
+console.log(anagrams('racer', ['crazer', 'carer', 'racar', 'caers', 'racer'])) // => ['carer', 'racer']
 
-console.log(""+[...str].sort())
-console.log([1,2,3]==[1,2,3])
-
-console.log(str.split`${d}`[0])
-
-                    
+console.log(anagrams('laser', ['lazing', 'lazy', 'lacer'])) // => []
